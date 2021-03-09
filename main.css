@@ -1,0 +1,37 @@
+@charset "UTF-8";
+body {
+  display: grid;
+  justify-items: center; }
+
+section {
+  max-width: 60vw;
+  width: 100%;
+  display: grid;
+  grid-row-gap: 2em; }
+
+blockquote {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-column-gap: 1.5em;
+  margin: 0; }
+  blockquote > q {
+    grid-column: 1 / span 1; }
+  blockquote > span {
+    grid-column: 2 / span 1; }
+    blockquote > span::before {
+      content: "\2013 "; }
+  blockquote > em {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 2; }
+  blockquote.dialog {
+    grid-template-columns: auto 1fr; }
+    blockquote.dialog > q {
+      grid-column: 2 / span 1; }
+    blockquote.dialog > span {
+      grid-column: 1 / span 1; }
+      blockquote.dialog > span::before {
+        content: ""; }
+      blockquote.dialog > span::after {
+        content: ":"; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,57 @@
+$autorCitatuDelka: 15em;
+
+body {
+	display: grid;
+	justify-items: center;
+}
+section {
+	max-width: 60vw;
+	width: 100%;
+
+	display: grid;
+	grid-row-gap: 2em;
+}
+
+blockquote {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-column-gap: 1.5em;
+	margin: 0;
+
+	&>q {
+		grid-column: 1 / span 1;
+	}
+
+	&>span {
+		grid-column: 2 / span 1;
+
+		&::before {
+			content: "\2013 ";
+		}
+	}
+
+	&>em {
+		grid-row: 1 / span 1;
+		grid-column: 1 / span 2;
+	}
+
+	&.dialog {
+		grid-template-columns: auto 1fr;
+
+		&>q {
+			grid-column: 2 / span 1;
+		}
+
+		&>span {
+			grid-column: 1 / span 1;
+
+			&::before {
+				content: "";
+			}
+
+			&::after {
+				content: ":";
+			}
+		}
+	}
+}
