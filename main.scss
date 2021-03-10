@@ -12,6 +12,21 @@ section {
 	grid-row-gap: 2em;
 }
 
+//Fonty
+body {
+	font-family: "CMUSerifRoman", serif;
+}
+em {
+	font-family: "CMUSerifItalic", serif;
+	font-style: italic;
+	font-weight: normal;
+}
+h1, h2, h3, h4, h5, h6, strong {
+	font-family: "CMUSerifBold", serif;
+	font-weight: bold;
+}
+
+//Citáty
 blockquote {
 	display: grid;
 	grid-template-columns: 1fr auto;
