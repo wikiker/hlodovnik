@@ -31,3 +31,10 @@ body
 * Ve všech případech je možné libovolný element vyvolat, stránka by se s tím měla umět vyrovnat.
 * Kontext se vykresluje kurzívou.
 * Autor se v monologu vykresluje s předcházející pomlčkou, v dialogu se závěrečnou dvojtečkou.
+
+### Font
+
+[CMU Serif](https://fontlibrary.org/en/font/cmu-serif)
+
+* základní font pro všechna využití
+* defaultní font při TeXání
