@@ -39,6 +39,7 @@ blockquote {
 
 	&>span {
 		grid-column: 2 / span 1;
+		align-self: end;
 
 		&::before {
 			content: "\2013 ";
@@ -59,6 +60,7 @@ blockquote {
 
 		&>span {
 			grid-column: 1 / span 1;
+			align-self: start;
 
 			&::before {
 				content: "";

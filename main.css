@@ -29,7 +29,8 @@ blockquote {
   blockquote > q {
     grid-column: 1 / span 1; }
   blockquote > span {
-    grid-column: 2 / span 1; }
+    grid-column: 2 / span 1;
+    align-self: end; }
     blockquote > span::before {
       content: "\2013 "; }
   blockquote > em {
@@ -40,7 +41,8 @@ blockquote {
     blockquote.dialog > q {
       grid-column: 2 / span 1; }
     blockquote.dialog > span {
-      grid-column: 1 / span 1; }
+      grid-column: 1 / span 1;
+      align-self: start; }
       blockquote.dialog > span::before {
         content: ""; }
       blockquote.dialog > span::after {
